@@ -72,11 +72,22 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 {"id":9,"first_name":"Michail","university":"Universidad Católica de Ávila","email":"mrome8@shinystat.com"},
 {"id":10,"first_name":"Hube","university":"Universitat Rovira I Virgili Tarragona","email":"hlethbrig9@foxnews.com"}]
 
-/* Request 1: Create a new array called universities that contains all the universities in the graduates array.  
+
+
+/*Request 1: Create a new array called universities that contains all the universities in the graduates array.  
+
+const universities = [];
+for (let i = 0; i < graduates.length; i++) {
+  universities.push(graduates[i].universities);
+}
+console.log(universities);
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-console.log(universities)
+const university = [];
+for (let i = 0; i < graduates.length; i++) {
+  university.push(graduates[i].university);
+}
+console.log(university.sort());
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -84,13 +95,24 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = [];
-console.log(contactInfo);
+// const contactInfo = [];
+// for (let i = 0; i < graduates.length; i++) {
+//   contactInfo.push(graduates[i].contactInfo);
+// }
+// console.log(first_name);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
-console.log(uni);
+// const uni = [];
+// for (let i = 0; i < graduates.length; i++) {
+//   if(graduates[i].university == "Uni") {
+//     uni.push(graduates[i]);
+//   }
+//   else {
+//     //do nothing
+//   }
+// }
+// console.log(uni.pop());
 
 
 // ==== ADVANCED Array Methods ====
@@ -148,4 +170,5 @@ console.log(populationTotal);
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
+
 
