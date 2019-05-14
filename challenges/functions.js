@@ -54,4 +54,4 @@ function myFunction() {
 }
 myFunction();
 
-//`nestedfunction()` can access the variable internally because it is an inner function that is defined inside myFunction().
+//`nestedfunction()` can access the variable internally because it is an inner function that is defined inside myFunction(), which is the parent function.
